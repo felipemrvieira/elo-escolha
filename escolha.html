@@ -13,12 +13,18 @@
     <script>
     $(document).ready(function(){
         $("#botao-demandante").click(function(){
+            $("#selecione").hide();
+            $("#correspondente").hide();
             $("#box1").hide();
+            $("#demandante").fadeIn();
             $("#box2").fadeIn();
         });
         
         $("#botao-correspondente").click(function(){
+            $("#selecione").hide();
+            $("#demandante").hide();
             $("#box2").hide();
+            $("#correspondente").fadeIn();
             $("#box1").fadeIn();
         });
     });
@@ -29,14 +35,15 @@
    <div class="container-fluid">
       <div id="area1" class="col-md-6">
             <div id="logo">
-                <img src="img/logo.png" alt="">
+                <img class="center-block" src="img/logo.png" alt="">
             </div>
-            <div id="botoes">
-              <h1>Selecione seu perfil</h1>
-              <p>Clique no botão para saber mais!</p>
-               <button type="button" id="botao-correspondente" class=" button botao btn-block" data-toggle="collapse" data-target="#correspondente" aria-expanded="false" aria-controls="correspondente">Sou Correspondente</button>
+            <div id="area-conteudo">
+              <h1 id="selecione">Selecione seu perfil</h1>
+              
+               
                
                <div class="collapse" id="correspondente">
+                 <h1 id="selecione">Correspondente</h1>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   </p>
@@ -47,9 +54,10 @@
                   </ul>
                 </div>
                
-               <button type="button" id="botao-demandante" class=" button botao btn-block" data-toggle="collapse" data-target="#demandante" aria-expanded="false" aria-controls="demandante">Sou Demandante</button>
+               
                
                <div class="collapse" id="demandante">
+                 <h1 id="selecione">Demandante</h1>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. In bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In bibendum.
                   </p>
@@ -58,40 +66,45 @@
             </div>
       </div>
        <div id="area2" class="col-md-6">
+            <div class=" botoes">
+                <button type="button" id="botao-correspondente" class=" button botao" >Sou Correspondente</button>
+                <button type="button" id="botao-demandante" class=" button botao">Sou Demandante</button>
+            </div>
             <div id="box1">
-                <div id="icone" class="center-block">
-                    <img class="center-block" src="img/advogado.png" alt="">
+                    <div id="icone" class="center-block">
+                        <img class="center-block" src="img/advogado.png" alt="">
+                    </div>
+                    <div>
+                        <h3>Quero representar uma empresa!</h3>
+                        <p id="descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In bibendum.</p>
+                        <form class="">
+                              <div class="form-group">
+                                <div class="input-group">
+                                  <input type="text" class="form-control" id="nome" placeholder="Nome Completo" required>
+                                </div>
+
+                                <div class="input-group">
+                                  <input required type="email" class="form-control" id="email" placeholder="elo@elojuridico.com.br">
+
+                                </div>
+
+                                <div class="input-group">
+                                  <input required type="password" class="form-control" id="email" placeholder="Digite sua senha!">
+
+                                </div>
+                                <p class="texto-centro">Concordo com os <a href="#">Termos de Uso</a>.</p>
+
+                              </div>
+                              <button type="submit" class="btn center-block">Cadastrar</button>
+                            </form>
                 </div>
-                <div>
-                    <h3>Quero representar uma empresa!</h3>
-                    <p id="descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In bibendum.</p>
-
-                    <form class="">
-                          <div class="form-group">
-
-                            <div class="input-group">
-                              <input type="text" class="form-control" id="nome" placeholder="Nome Completo" required>
-                              <div class="input-group-addon"><span class="glyphicon glyphicon-align-left" aria-hidden="true"></span></div>
-                            </div>
-
-                            <div class="input-group">
-                              <input required type="email" class="form-control" id="email" placeholder="elo@elojuridico.com.br">
-                              <div class="input-group-addon"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></div>
-                            </div>
-
-                            <div class="input-group">
-                              <input required type="password" class="form-control" id="email" placeholder="Digite sua senha!">
-                              <div class="input-group-addon"><span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span></div>
-                            </div>
-                            <p class="texto-centro">Concordo com os <a href="#">Termos de Uso</a>.</p>
-
-                          </div>
-                          <button type="submit" class="btn center-block">Cadastrar</button>
-                        </form>
-                </div>    
+                
+                    
             </div>
                
             <div id="box2">
+              
+               
                 <div id="icone" class="center-block">
                     <img class="center-block" src="img/empresa.png" alt="">
                 </div>
@@ -132,7 +145,7 @@
                           <button type="submit" class="btn center-block">Cadastrar</button>
                         </form>
                 </div>    
-            </div>
+            
             
        </div>
        

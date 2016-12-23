@@ -33,8 +33,8 @@ body{
                 }
             }
         
-            #botoes{
-                padding: 0 140px 0 140px;
+            #area-conteudo{
+                padding: 0 50px 0 50px;
                 margin: auto;
                 
                 h1{
@@ -46,21 +46,7 @@ body{
                     color: $cor-fundo;
                 }
                 
-                .botao{     
-                    background-color: transparent;
-                    margin: 4px 2px;
-                    padding: 8px 20px;
-                    margin-bottom: 25px;
-                    cursor: pointer;
-                    border: 1px solid white;
-                    border-radius: 5px;
-                    text-align: center;
-                    text-decoration: none;
-                    display: inline-block;
-                    font-size: 16px;
-                    color: white;
-                    
-                }
+                
                 
             }
         }
@@ -69,10 +55,35 @@ body{
             display: -webkit-flex;
             display: flex;
             height: 700px;
+            paddin: 0;
+            
+            .botoes{
+                position: absolute;
+                width: 100%;
+                padding: 0 80px 0 80px;
+                top: 60px;
+                    
+                    .botao{     
+                        background-color: transparent;
+                        margin: 4px 2px;
+                        padding: 8px 20px;
+                        margin-bottom: 25px;
+                        cursor: pointer;
+                        border: 1px solid $cinza;
+                        border-radius: 5px;
+                        text-align: center;
+                        text-decoration: none;
+                        display: inline-block;
+                        font-size: 16px;
+                        color: $cinza;
+                        width: 48%
+                    
+                    }
+                }
             
             #box1{
                 margin: auto;
-                padding: 0 80px 0 80px;
+                padding: 10px 80px 0 80px;
                 
                 h3{
                     margin: 0;
@@ -90,26 +101,28 @@ body{
                     font-size: 17px;
                 }
                 
+                
+                
                 .input-group{
                     margin-bottom: 10px;
+                    width: 100%;
                     
                     input{
-                        background-color:  #dde3ec;
+                        background-color: #dde3ec;
                         color: #788aa5;
                         height: 40px;
                         border: none;
+                        width: 100%;
                     }
                     
-                    span{
-                        opacity: 0.2;
-                    }
+                    
                 }
             }
             
             #box2{
                 display: none;
                 margin: auto;
-                padding: 0 80px 0 80px;
+                padding: 10px 80px 0 80px;
                 
                 h3{
                     margin: 0;
@@ -126,6 +139,7 @@ body{
                     border-radius: 3px;
                     font-size: 17px;
                 }
+                
                 
                 .input-group{
                     margin-bottom: 10px;

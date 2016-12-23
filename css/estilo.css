@@ -20,34 +20,41 @@ body {
         position: absolute; }
         body .container-fluid #area1 #logo img {
           width: 80%; }
-      body .container-fluid #area1 #botoes {
-        padding: 0 140px 0 140px;
+      body .container-fluid #area1 #area-conteudo {
+        padding: 0 50px 0 50px;
         margin: auto; }
-        body .container-fluid #area1 #botoes h1 {
+        body .container-fluid #area1 #area-conteudo h1 {
           margin: 0;
           color: #eceef1; }
-        body .container-fluid #area1 #botoes p {
+        body .container-fluid #area1 #area-conteudo p {
           color: #eceef1; }
-        body .container-fluid #area1 #botoes .botao {
+    body .container-fluid #area2 {
+      display: -webkit-flex;
+      display: flex;
+      height: 700px;
+      paddin: 0; }
+      body .container-fluid #area2 .botoes {
+        position: absolute;
+        width: 100%;
+        padding: 0 80px 0 80px;
+        top: 60px; }
+        body .container-fluid #area2 .botoes .botao {
           background-color: transparent;
           margin: 4px 2px;
           padding: 8px 20px;
           margin-bottom: 25px;
           cursor: pointer;
-          border: 1px solid white;
+          border: 1px solid #8290a3;
           border-radius: 5px;
           text-align: center;
           text-decoration: none;
           display: inline-block;
           font-size: 16px;
-          color: white; }
-    body .container-fluid #area2 {
-      display: -webkit-flex;
-      display: flex;
-      height: 700px; }
+          color: #8290a3;
+          width: 48%; }
       body .container-fluid #area2 #box1 {
         margin: auto;
-        padding: 0 80px 0 80px; }
+        padding: 10px 80px 0 80px; }
         body .container-fluid #area2 #box1 h3 {
           margin: 0;
           color: #8290a3; }
@@ -61,18 +68,18 @@ body {
           border-radius: 3px;
           font-size: 17px; }
         body .container-fluid #area2 #box1 .input-group {
-          margin-bottom: 10px; }
+          margin-bottom: 10px;
+          width: 100%; }
           body .container-fluid #area2 #box1 .input-group input {
             background-color: #dde3ec;
             color: #788aa5;
             height: 40px;
-            border: none; }
-          body .container-fluid #area2 #box1 .input-group span {
-            opacity: 0.2; }
+            border: none;
+            width: 100%; }
       body .container-fluid #area2 #box2 {
         display: none;
         margin: auto;
-        padding: 0 80px 0 80px; }
+        padding: 10px 80px 0 80px; }
         body .container-fluid #area2 #box2 h3 {
           margin: 0;
           color: #8290a3; }
