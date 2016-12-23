@@ -1,0 +1,157 @@
+$cor-fundo: #eceef1;
+$cinza: #8290a3;
+$padding-lateral: 32px;
+$padding-vertical: 32px;
+
+body{
+    background-color: $cor-fundo;
+    padding: 0;
+    font-family: "Gotham Book", "Arial", sans-serif;
+    
+    .texto-centro{
+        text-align: center;
+    }
+    
+    .container-fluid{
+        padding: 0;
+        
+        #area1{
+            background:url(../img/adv.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 700px;
+            display: -webkit-flex;
+            display: flex;
+            color: $cor-fundo;
+            
+            #logo{
+                margin: 30px 0 50px 0;
+                position: absolute;
+                img{
+                    width: 80%;    
+                }
+            }
+        
+            #botoes{
+                padding: 0 140px 0 140px;
+                margin: auto;
+                
+                h1{
+                    margin: 0;
+                    color: $cor-fundo;
+                }
+                
+                p{
+                    color: $cor-fundo;
+                }
+                
+                .botao{     
+                    background-color: transparent;
+                    margin: 4px 2px;
+                    padding: 8px 20px;
+                    margin-bottom: 25px;
+                    cursor: pointer;
+                    border: 1px solid white;
+                    border-radius: 5px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    color: white;
+                    
+                }
+                
+            }
+        }
+        
+        #area2{
+            display: -webkit-flex;
+            display: flex;
+            height: 700px;
+            
+            #box1{
+                margin: auto;
+                padding: 0 80px 0 80px;
+                
+                h3{
+                    margin: 0;
+                    color: $cinza;
+                }
+                #descricao{
+                    color: $cinza;
+                    opacity: 0.5;
+                }
+                button{
+                    background-color: #DC4115;
+                    color: white;
+                    padding: 10px 40px 10px 40px;
+                    border-radius: 3px;
+                    font-size: 17px;
+                }
+                
+                .input-group{
+                    margin-bottom: 10px;
+                    
+                    input{
+                        background-color:  #dde3ec;
+                        color: #788aa5;
+                        height: 40px;
+                        border: none;
+                    }
+                    
+                    span{
+                        opacity: 0.2;
+                    }
+                }
+            }
+            
+            #box2{
+                display: none;
+                margin: auto;
+                padding: 0 80px 0 80px;
+                
+                h3{
+                    margin: 0;
+                    color: $cinza;
+                }
+                #descricao{
+                    color: $cinza;
+                    opacity: 0.5;
+                }
+                button{
+                    background-color: #DC4115;
+                    color: white;
+                    padding: 10px 40px 10px 40px;
+                    border-radius: 3px;
+                    font-size: 17px;
+                }
+                
+                .input-group{
+                    margin-bottom: 10px;
+                    
+                    input{
+                        background-color:  #dde3ec;
+                        color: #788aa5;
+                        height: 40px;
+                        border: none;
+                    }
+                    
+                    input[type=number]::-webkit-inner-spin-button, 
+                    input[type=number]::-webkit-outer-spin-button { 
+                      -webkit-appearance: none; 
+                      margin: 0; 
+                    }
+                    
+                    span{
+                        opacity: 0.2;
+                    }
+                }
+            }
+            
+            
+        }
+    }
+    
+    
+}

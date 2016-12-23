@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Elo Jurídico</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" href="css/estilo.css">
+    
+    <script>
+    $(document).ready(function(){
+        $("#botao-demandante").click(function(){
+            $("#box1").hide();
+            $("#box2").fadeIn();
+        });
+        
+        $("#botao-correspondente").click(function(){
+            $("#box2").hide();
+            $("#box1").fadeIn();
+        });
+    });
+    </script>
+    
+</head>
+<body>
+   <div class="container-fluid">
+      <div id="area1" class="col-md-6">
+            <div id="logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <div id="botoes">
+              <h1>Selecione seu perfil</h1>
+              <p>Clique no botão para saber mais!</p>
+               <button type="button" id="botao-correspondente" class=" button botao btn-block" data-toggle="collapse" data-target="#correspondente" aria-expanded="false" aria-controls="correspondente">Sou Correspondente</button>
+               
+               <div class="collapse" id="correspondente">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                  <ul>
+                      <li>Lorem ipsum dolor sit amet</li>
+                      <li>Lorem ipsum dolor sit amet</li>
+                      <li>Lorem ipsum dolor sit amet</li>
+                  </ul>
+                </div>
+               
+               <button type="button" id="botao-demandante" class=" button botao btn-block" data-toggle="collapse" data-target="#demandante" aria-expanded="false" aria-controls="demandante">Sou Demandante</button>
+               
+               <div class="collapse" id="demandante">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In bibendum.
+                  </p>
+                </div>
+                
+            </div>
+      </div>
+       <div id="area2" class="col-md-6">
+            <div id="box1">
+                <div id="icone" class="center-block">
+                    <img class="center-block" src="img/advogado.png" alt="">
+                </div>
+                <div>
+                    <h3>Quero representar uma empresa!</h3>
+                    <p id="descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In bibendum.</p>
+
+                    <form class="">
+                          <div class="form-group">
+
+                            <div class="input-group">
+                              <input type="text" class="form-control" id="nome" placeholder="Nome Completo" required>
+                              <div class="input-group-addon"><span class="glyphicon glyphicon-align-left" aria-hidden="true"></span></div>
+                            </div>
+
+                            <div class="input-group">
+                              <input required type="email" class="form-control" id="email" placeholder="elo@elojuridico.com.br">
+                              <div class="input-group-addon"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></div>
+                            </div>
+
+                            <div class="input-group">
+                              <input required type="password" class="form-control" id="email" placeholder="Digite sua senha!">
+                              <div class="input-group-addon"><span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span></div>
+                            </div>
+                            <p class="texto-centro">Concordo com os <a href="#">Termos de Uso</a>.</p>
+
+                          </div>
+                          <button type="submit" class="btn center-block">Cadastrar</button>
+                        </form>
+                </div>    
+            </div>
+               
+            <div id="box2">
+                <div id="icone" class="center-block">
+                    <img class="center-block" src="img/empresa.png" alt="">
+                </div>
+                <div>
+                    <h3>Quero um advogado que me represente!</h3>
+                    <p id="descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In bibendum.</p>
+
+                    <form class="">
+                          <div class="form-group">
+
+                            <div class="input-group">
+                              <input type="text" class="form-control" id="nome" placeholder="Razão social" required>
+                              <div class="input-group-addon"><span class="glyphicon glyphicon-align-left" aria-hidden="true"></span></div>
+                            </div>
+                             
+                            <div class="input-group">
+                              <input type="number" class="form-control" id="nome" placeholder="CNPJ" required>
+                              <div class="input-group-addon"><span class="glyphicon glyphicon-align-left" aria-hidden="true"></span></div>
+                            </div>
+
+                            <div class="input-group">
+                              <input required type="email" class="form-control" id="email" placeholder="elo@elojuridico.com.br">
+                              <div class="input-group-addon"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></div>
+                            </div>
+
+                            <div class="input-group">
+                              <input required type="password" class="form-control" id="email" placeholder="Digite sua senha!">
+                              <div class="input-group-addon"><span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span></div>
+                            </div>
+                             
+                            <div class="input-group">
+                              <input required type="password" class="form-control" id="email" placeholder="Digite sua senha!">
+                              <div class="input-group-addon"><span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span></div>
+                            </div>
+                            <p class="texto-centro">Concordo com os <a href="#">Termos de Uso</a>.</p>
+
+                          </div>
+                          <button type="submit" class="btn center-block">Cadastrar</button>
+                        </form>
+                </div>    
+            </div>
+            
+       </div>
+       
+   </div>
+    
+</body>
+</html>
