@@ -12,40 +12,58 @@ body {
       background-size: cover;
       background-position: center;
       height: 700px;
+      padding: 0 50px 0 50px;
       display: -webkit-flex;
       display: flex;
       color: #eceef1; }
+      @media screen and (max-device-width: 850px) {
+        body .container-fluid #area1 {
+          padding: 0 40px 0 40px; } }
+      @media screen and (max-device-width: 850px) {
+        body .container-fluid #area1 {
+          height: 100%;
+          padding-bottom: 25px; } }
       body .container-fluid #area1 #logo {
-        margin: 50px 0 50px 0;
+        margin: 30px 0 50px 0;
         position: absolute;
         left: 50%; }
+        @media screen and (max-device-width: 850px) {
+          body .container-fluid #area1 #logo {
+            width: 30%; } }
         body .container-fluid #area1 #logo img {
-          width: 80%;
           position: relative;
           left: -50%; }
+          @media screen and (max-device-width: 850px) {
+            body .container-fluid #area1 #logo img {
+              width: 100%; } }
       body .container-fluid #area1 #area-conteudo {
-        padding: 0 50px 0 50px;
-        margin: auto; }
+        margin: auto;
+        margin-top: 50%; }
         body .container-fluid #area1 #area-conteudo h1 {
           margin: 0;
           color: #eceef1; }
         body .container-fluid #area1 #area-conteudo p {
           color: #eceef1; }
+          @media screen and (max-device-width: 850px) {
+            body .container-fluid #area1 #area-conteudo p {
+              font-size: 18px; } }
     body .container-fluid #area2 {
       display: -webkit-flex;
       display: flex;
+      -webkit-flex-direction: column;
+      flex-direction: column;
       height: 700px;
-      padding: 0; }
+      padding: 0 65px 0 65px; }
+      @media screen and (max-device-width: 850px) {
+        body .container-fluid #area2 {
+          padding: 0 40px 0 40px; } }
       body .container-fluid #area2 .botoes {
-        position: absolute;
-        width: 100%;
-        padding: 0 80px 0 80px;
-        top: 60px; }
+        margin-top: 50px; }
         body .container-fluid #area2 .botoes .botao {
           background-color: transparent;
           margin: 4px 2px;
           padding: 8px 20px;
-          margin-bottom: 25px;
+          margin-bottom: 0;
           cursor: pointer;
           border: 1px solid #8290a3;
           border-radius: 5px;
@@ -53,8 +71,10 @@ body {
           text-decoration: none;
           display: inline-block;
           font-size: 16px;
-          color: #8290a3;
-          width: 48%; }
+          color: #8290a3; }
+          @media screen and (min-device-width: 850px) {
+            body .container-fluid #area2 .botoes .botao {
+              width: 48%; } }
       body .container-fluid #area2 .input-group {
         margin-bottom: 10px;
         width: 100%; }
@@ -69,8 +89,10 @@ body {
           -webkit-appearance: none;
           margin: 0; }
       body .container-fluid #area2 #box1 {
-        margin: auto;
-        padding: 10px 80px 0 80px; }
+        margin-top: 25px; }
+        @media screen and (max-device-width: 850px) {
+          body .container-fluid #area2 #box1 {
+            width: 100%; } }
         body .container-fluid #area2 #box1 h3 {
           margin: 0;
           color: #8290a3; }
@@ -85,8 +107,7 @@ body {
           font-size: 17px; }
       body .container-fluid #area2 #box2 {
         display: none;
-        margin: auto;
-        padding: 50px 80px 0 80px; }
+        margin-top: 25px; }
         body .container-fluid #area2 #box2 h3 {
           margin: 0;
           color: #8290a3; }
